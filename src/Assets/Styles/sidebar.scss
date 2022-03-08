@@ -1,0 +1,19 @@
+
+.logo{
+    margin-bottom: 112px;
+    width: 10px;
+}
+
+.menuItems{
+    padding: 1px;
+    border-radius:25px;
+}
+.isActiveMenu{
+    padding: 1px;;
+    border-radius:25px;
+    background-color: #969897;
+    transition: 1s ease-out;
+}
+.drawer{
+    border: 0.5px solid black;
+}
