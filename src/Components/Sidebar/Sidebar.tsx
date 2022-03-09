@@ -14,7 +14,7 @@ interface MENUInterface {
 }
 
 const menuItems: MENUInterface[] = [{
-    route: '/reactors',
+    route: '/',
     icon: <Home />,
     label: 'Home'
 },
@@ -36,7 +36,7 @@ const Sidebar = () => {
         navigate(`${linkTo}`)
     }
     return (
-        <Grid container direction='column'>
+        <Grid container direction='column' className='sidebar'>
             <Grid item sx={{ marginTop: '5px' }}>
                 <img
                     style={{ width: "30px" }}

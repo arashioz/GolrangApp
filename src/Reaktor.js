@@ -8,6 +8,7 @@ const reaktors = [
       image:[ "/images/Reactors/r001.png","/images/Reactors/r001D.png"],
     },
     {
+      style:'reactor-2',
       _id: 2,
       name: 'R002',
       image:[ "/images/Reactors/r002.png","/images/Reactors/r002D.png"],

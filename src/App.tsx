@@ -6,6 +6,10 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import LayoutReactor from './Layout/Layout-reactor/LayoutReactor';
 import LayoutSetting from './Layout/Layout-setting/LayoutSetting';
 
+
+
+
+
 function App() {
   return (
     <div className="App">
@@ -15,8 +19,11 @@ function App() {
             <Sidebar />
           </Grid>
           <Grid item lg md>
+            <Grid item lg md>
+                header
+            </Grid>
             <Routes>
-              <Route path='/reactors' element={<LayoutReactor />} />
+              <Route path='/' element={<LayoutReactor />} />
               <Route path='/setting' element={<LayoutSetting />} />
             </Routes>
           </Grid>

@@ -1,8 +1,44 @@
-.reactorCol{
-    width: 100px;
-    height: 260px;
+
+.reactor-Col{
+    height: 250px;
+    padding:30px
+   
 }
-.reactorCol > img{
+.reactor-Col > .reactor-image >img {
     width: 100%;
     height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.reactor-Col-main > .reactor-image-main > img {
+    width: 45%;
+    height: 25%;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+//// customize reactor
+.reactor-2 > img{
+    cursor: pointer;
+    padding-top: 10px;
+    width: 80%;
+    height: 75%;
+
+ }
+
+.reactor-gauges{
+   margin-top: 8px;
+}
+
+.reactor-gauges > .gauge-1{
+    padding: 1px 10px 1px 10px;
+    border-radius: 8px;
+    background-color: rgba(33, 199, 94, 0.823);
+}
+.reactor-gauges > .gauge-2{
+    background-color: rgb(199, 33, 33);
+    border-radius: 8px;
+     padding: 1px 10px 1px 10px;
 }
