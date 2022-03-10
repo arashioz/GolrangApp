@@ -3,7 +3,6 @@
 const reaktors = [
     {
     _id: 1,
-      class:'rak1',
       name: 'R001',
       image:[ "/images/Reactors/r001.png","/images/Reactors/r001D.png"],
     },
@@ -56,6 +55,7 @@ const reaktors = [
       image:[ "/images/Reactors/r003.png","/images/Reactors/r003D.png"],
     },
     {
+      style:'reactor-11',
       _id: 11,
       name: 'R0011',
       image:[ "/images/Reactors/r001.png","/images/Reactors/r001D.png"],

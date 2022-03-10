@@ -39,7 +39,7 @@ const Sidebar = () => {
         <Grid container direction='column' className='sidebar'>
             <Grid item sx={{ marginTop: '5px' }}>
                 <img
-                    style={{ width: "30px" }}
+                    style={{ width: "20px" }}
                     src={Logo}
                 />
                 <hr className='drawer' />

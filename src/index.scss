@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:  "montserrat";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +8,24 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@font-face {
+  font-family: 'IRanSans';
+  src: url('../public/Fonts/Iranian\ Sans.ttf');
+}
+
+@font-face {
+  font-family: 'Byekan';
+  src: url('../public/Fonts/BYekan.ttf');
+}
+
+@font-face {
+  font-family: 'yekan';
+  src: url('../public/Fonts/Yekan.woff');
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url('../public/Fonts/montserrat-v23-latin-regular.woff2');
 }

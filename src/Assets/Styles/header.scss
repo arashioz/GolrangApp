@@ -1,0 +1,15 @@
+@import './layout.scss';
+
+
+
+.header-container{
+    background-color: $primaryColor;
+    height:55px ;
+    margin-left: 62px;
+}
+.header-container .logo{
+    padding: 6px;
+    margin-right: 35px;
+    width: 55px;
+    height: 75%;
+}
