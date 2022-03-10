@@ -27,7 +27,7 @@ const LayoutReactor = () => {
     return (
         <Grid container>
             <Grid item md={11} >
-                <Grid container direction='row' justifyContent='space-around' spacing={4} sx={{ pt: 1 }}>
+                <Grid container direction='row' justifyContent='space-around' spacing={4} sx={{ mt: 1 }}>
                     {topLeftReactors.map((i: any) => (
                         <Reactor
                             _id={i._id}
