@@ -99,7 +99,7 @@ const LayoutReactor = () => {
                     direction="row"
                     justifyContent="space-around"
                     alignItems="flex-end"
-                    className='rcb'
+                    className='reactor-bottom'
                     sx={{ width: "93%" }}
                 >
                     {BottomReactor.map((i: any) => (
@@ -121,7 +121,7 @@ const LayoutReactor = () => {
                     direction="column"
                     alignItems="center"
                     className='parak-container'
-                    spacing={2}
+                    spacing={5}
                 >
                     {parak.map((i: any) => (
                         <Reactor
