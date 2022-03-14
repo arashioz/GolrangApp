@@ -58,7 +58,7 @@ const reaktors = [
       style:'reactor-11',
       _id: 11,
       name: 'R0011',
-      image:[ "/images/Reactors/r001.png","/images/Reactors/r001D.png"],
+      image:[ "/images/Reactors/r003.png","/images/Reactors/r003D.png"],
     },
     {
       _id: 12,
@@ -94,6 +94,22 @@ const reaktors = [
       _id: 18,
       name: 'R0018',
       image:[ "/images/Reactors/r004.png","/images/Reactors/r004D.png"],
+    },
+    {
+      _id: 19,
+      name: 'R0019',
+      image:[ "/images/Reactors/parak1.png","/images/Reactors/r004D.png"],
+    },
+    {
+      _id: 20,
+      name: 'R0020',
+      image:[ "/images/Reactors/parak1.png","/images/Reactors/parak1.png"],
+    }
+    ,
+    {
+      _id: 21,
+      name: 'R0021',
+      image:[ "/images/Reactors/parak2.png","/images/Reactors/parak2.png"],
     }
 
   ]

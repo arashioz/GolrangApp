@@ -42,7 +42,6 @@ const Sidebar = () => {
                     style={{ width: "20px" }}
                     src={Logo}
                 />
-                <hr className='drawer' />
             </Grid>
             {
                 menuItems.map((i: any, idx: number) => (

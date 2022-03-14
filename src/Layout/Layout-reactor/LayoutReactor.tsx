@@ -18,6 +18,7 @@ const LayoutReactor = () => {
     const mainRightReactor1 = Reaktor.slice(8, 9)
     const mainRightReactor2 = Reaktor.slice(9, 10)
     const BottomReactor = Reaktor.slice(10, 18)
+    const parak = Reaktor.slice(18, 21)
 
 
 
@@ -25,9 +26,9 @@ const LayoutReactor = () => {
         history(`/reactor/${id}`)
     }
     return (
-        <Grid container>
+        <Grid container className='reactor-container'>
             <Grid item md={11} >
-                <Grid container direction='row' justifyContent='space-around' spacing={4} sx={{ mt: 1 }}>
+                <Grid container direction='row' justifyContent='space-around' alignItems='flex-end'>
                     {topLeftReactors.map((i: any) => (
                         <Reactor
                             _id={i._id}
@@ -61,7 +62,7 @@ const LayoutReactor = () => {
                 <Grid container
                     direction="row"
                     justifyContent="flex-end"
-                    spacing={5}
+                    spacing={2}
                     alignItems="center">
                     {mainRightReactor1.map((i: any) => (
                         <Reactor
@@ -78,9 +79,8 @@ const LayoutReactor = () => {
                 <Grid container
                     direction="row"
                     justifyContent="flex-end"
-                    spacing={5}
+                    spacing={2}
                     alignItems="center">
-
                     {mainRightReactor2.map((i: any) => (
                         <Reactor
                             _id={i._id}
@@ -90,6 +90,7 @@ const LayoutReactor = () => {
                             image={i.image}
                             powerStatus={reactorPowerStatus}
                             reactorSectionClass="reactor-Col-main"
+
                         />
                     ))}
                 </Grid>
@@ -98,7 +99,8 @@ const LayoutReactor = () => {
                     direction="row"
                     justifyContent="space-around"
                     alignItems="flex-end"
-                    spacing={4}
+                    className='rcb'
+                    sx={{ width: "93%" }}
                 >
                     {BottomReactor.map((i: any) => (
                         <Reactor
@@ -114,12 +116,24 @@ const LayoutReactor = () => {
                 </Grid>
             </Grid>
             <Grid item md={1} lg={1}>
-
-                <Grid>
-                    hwl
-                </Grid>
-                <Grid>
-                    hwl
+                <Grid
+                    container
+                    direction="column"
+                    alignItems="center"
+                    className='parak-container'
+                    spacing={2}
+                >
+                    {parak.map((i: any) => (
+                        <Reactor
+                            _id={i._id}
+                            reactorName={i.name}
+                            navigate={() => navigateHandler(i._id)}
+                            style={i.style}
+                            image={i.image}
+                            powerStatus={reactorPowerStatus}
+                            reactorSectionClass="parak"
+                        />
+                    ))}
                 </Grid>
             </Grid>
         </Grid>

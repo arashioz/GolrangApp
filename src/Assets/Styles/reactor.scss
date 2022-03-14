@@ -1,7 +1,4 @@
-.reactor-Col{
-    padding: 4px;
-    padding-left: 10px;
-}
+ 
 .reactor-Col > .reactor-image >img {
     width: 65%;
     height: 100%;
@@ -9,14 +6,24 @@
     margin: 0 auto;
     cursor: pointer;
 }
-.reactor-Col-main > .reactor-image-main > img {
-    width: 45%;
-    height: 25%;
-    justify-content: center;
-    margin: 0 auto;
-    cursor: pointer;
+.reactor-Col-main > .reactor-image > img{
+    width: 62%;
+    padding-top: 15px;
 }
 
+.reactor-Col-bottom > .reactor-image > img{
+    width: 65%;
+    cursor: pointer;
+
+}
+
+.parak{
+    width: 70%;
+}
+.parak img{
+    width: 80%;
+    height: 80%
+}
 
 .reactor-gauges{
    margin-top: 8px;
@@ -51,7 +58,7 @@
         100%{filter: none}
     }
     .reactor-on{
-        animation: turnOnReactor 1s infinite;
+        animation: turnOnReactor 4s forwards;
 
 }
 .reactor-off{
