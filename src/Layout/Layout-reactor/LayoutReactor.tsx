@@ -27,7 +27,7 @@ const LayoutReactor = () => {
     }
     return (
         <Grid container className='reactor-container'>
-            <Grid item md={11} >
+            <Grid item md={10} >
                 <Grid container direction='row' justifyContent='space-around' alignItems='flex-end'>
                     {topLeftReactors.map((i: any) => (
                         <Reactor
@@ -114,6 +114,9 @@ const LayoutReactor = () => {
                         />
                     ))}
                 </Grid>
+            </Grid>
+            <Grid item md={1} lg={1}>
+                        <h1>sjsjsjsjsjs</h1>
             </Grid>
             <Grid item md={1} lg={1}>
                 <Grid
