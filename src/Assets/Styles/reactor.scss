@@ -1,18 +1,18 @@
  
 .reactor-Col > .reactor-image >img {
-    width: 60%;
+    width: 70%;
     height: 100%;
     justify-content: center;
     margin: 0 auto;
     cursor: pointer;
 }
 .reactor-Col-main > .reactor-image > img{
-    width: 62%;
+    width: 55%;
     padding-top: 15px;
 }
 
 .reactor-Col-bottom > .reactor-image > img{
-    width: 68%;
+    width: 70%;
     cursor: pointer;
 
 }
@@ -31,17 +31,17 @@
 
 .reactor-gauges > .gauge-1{
     background-color:  #ff236581;
-    border:2px solid  #FF2366;
-    padding: 1px 14px 1px 14px;
     border-radius: 8px;
-    
+    border:2px solid  #FF2366;
+    text-align: center;
 }
 .reactor-gauges > .gauge-2{
-    padding: 1px 14px 1px 14px;
-    border-radius: 8px;
     background-color:  #23ffbd7e;
     border: 2px solid #23ffbd;
-}
+    border-radius: 8px;
+    text-align: center;
+}    
+
 
 
 .reactor-Col-Bottom > .reactor-image-Bottom > img {

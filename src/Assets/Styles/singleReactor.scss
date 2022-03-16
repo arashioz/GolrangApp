@@ -1,8 +1,6 @@
-$mainColor: #000000;
-$primaryColor : #151515;
+@import './layout.scss';
 
-
-.layout-container{
+.main{
     height: 100vh;
     background-color: $primaryColor;
     margin-left: 4px;

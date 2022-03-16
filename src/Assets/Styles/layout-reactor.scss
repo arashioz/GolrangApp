@@ -1,17 +1,14 @@
 @import './layout.scss';
-.reactor-container{
+.layout-container{
+    height: 100vh;
     background-color: $primaryColor;
     margin-left: 4px;
     margin-top: 4px;
 }
-
-.reactor-container .parak-container{
-    position: relative;
-    top:34%
+.reactor-container-main{
+   transform: translate(0 , 35%);
 }
+.parak-container{
+    transform: translate(0 , 60%);
 
-.reactor-bottom{
-    position: relative;
-    bottom: 12%;
-    margin-right: 40px;
 }
