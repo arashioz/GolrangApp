@@ -1,5 +1,5 @@
-import { Grid, Typography } from '@mui/material'
-import { useEffect, useState } from 'react';
+import { Grid, Typography, } from '@mui/material'
+import { useEffect, useState, memo } from 'react';
 
 import '../../Assets/Styles/reactor.scss'
 
@@ -36,4 +36,4 @@ const Reactor = (props: { _id: number, reactorName: string, navigate: () => void
     )
 }
 
-export default Reactor
+export default memo(Reactor)

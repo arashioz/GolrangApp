@@ -1,0 +1,13 @@
+.alarmbox-tabpanel::-webkit-scrollbar {
+  width: 2px;
+  height: 100%;
+  border-radius: 200px;
+  }
+.alarmbox-tabpanel::-webkit-scrollbar-thumb{
+    background: rgb(119, 119, 119);
+    height: 1px;
+  }
+// .alarmbox-tabpanel::-webkit-scrollbar-track-piece{
+// background-color: rgb(54, 54, 54);
+// height: 1px;
+// }

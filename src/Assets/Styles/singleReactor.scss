@@ -1,8 +1,40 @@
 @import './layout.scss';
 
-.main{
-    height: 100vh;
-    background-color: $primaryColor;
-    margin-left: 4px;
-    margin-top: 4px;
+.reactor-container{
+    padding-left: 4px;
 }
+.reactor-header{
+    height: 48px;
+    background-color: $primaryColor;
+}
+.reactor-alarmbox{
+    margin-top: 4px;
+    background-color: $primaryColor;
+    height: 100px;
+    height: 24vh ;
+}
+
+.reactor-main-image{
+    margin-top: 4px;
+    background-color: $primaryColor;
+    height: 74vh ;
+}
+.reactor-main-data{
+    margin-top: 4px;
+    padding: 15px;
+    margin-bottom: 210px;
+    margin-left: 4px;
+    height: 94vh;
+    overflow: scroll;
+    background-color: $primaryColor;
+}
+
+.reactor-main-data::-webkit-scrollbar {
+    width: 2px;
+    height: 100%;
+    border-radius: 200px;
+}
+.reactor-main-data::-webkit-scrollbar-thumb{
+    background: rgb(119, 119, 119);
+    height: 1px;
+  }

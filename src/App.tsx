@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.scss';
 import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/Sidebar';
-import LayoutReactor from './Layout/reactor-layout/ReactorLayout';
+import LayoutReactor from './Layout/reactor-layout/LayoutReactor';
 import LayoutSetting from './Layout/setting-layout/LayoutSetting';
 //install Fonts
 import Yekan from './Assets/Styles/Yekan.woff'
@@ -42,9 +42,9 @@ function App() {
               <Sidebar />
             </Grid>
             <Grid item lg md>
-              <Grid item lg md>
+              {/* <Grid item lg md>
                 <Header />
-              </Grid>
+              </Grid> */}
               <Routes>
                 <Route path='/' element={<LayoutReactor />} />
                 <Route path='/reactor/:id' element={<SingleReactorLayout />} />

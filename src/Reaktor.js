@@ -2,9 +2,9 @@
 
 const reaktors = [
     {
-    _id: 1,
+      _id: 1,
       name: 'R001',
-      image:[ "/images/Reactors/r001.png","/images/Reactors/r001D.png"],
+      image:[ "/images/Reactors/r001.png","/images/Reactors/reaktor1.svg"],
     },
     {
       style:'reactor-2',

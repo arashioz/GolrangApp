@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material'
+import { Grid, Stack, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import moment from 'jalali-moment'
 
@@ -13,16 +13,13 @@ const Clock = () => {
     }, [])
     return (
         <>
-            <Grid container justifyContent="center" spacing={2} >
+            <Grid container spacing={2} direction='row' sx={{ mr: 4 }}>
                 <Grid item>
                     {getDate.locale('fa').format("YYYY/MM/DD")}
                 </Grid>
                 <Grid item> | </Grid>
-                <Grid item sx={{ width: 10 }}>
-                    {time.toLocaleTimeString('en-GB')}
-                </Grid>
+                <Grid item sx={{ width: 50 }}> {time.toLocaleTimeString('en-GB')}</Grid>
             </Grid>
-
         </>
     )
 }

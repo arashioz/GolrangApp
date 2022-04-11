@@ -17,8 +17,10 @@ const Header = () => {
     };
     return (
         <>
-            <Stack className='header-container' direction='row-reverse' alignItems="center"
-                spacing={2} >
+            <Stack className='header-container' direction='row-reverse' justifyContent='flex-start' alignItems='center'
+                spacing={2}
+            >
+
                 <Grid item className='logo'>
                     <img style={{ width: '100%', height: '100%' }} src={logo} />
                 </Grid>
@@ -31,7 +33,7 @@ const Header = () => {
                     <Stack direction="row">
                         <Button onClick={handleClick}>
                             <Typography sx={{ color: 'white', mr: 2 }} variant="subtitle1">
-                                آرش بلالی
+                         آرش بلالی 
                             </Typography>
                             <Avatar src={avatar} sx={{ width: 30, height: 30 }} />
                         </Button>
@@ -67,7 +69,7 @@ const Header = () => {
                         </Menu>
                     </Stack>
                 </Grid>
-                <Grid item md={2}>
+                <Grid item>
                     <Clock />
                 </Grid>
             </Stack>
