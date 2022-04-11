@@ -1,5 +1,5 @@
-import { Grid, Typography } from '@mui/material'
-import { useEffect, useState } from 'react';
+import { Grid, Typography, } from '@mui/material'
+import { useEffect, useState, memo } from 'react';
 
 import '../../Assets/Styles/reactor.scss'
 
@@ -19,13 +19,13 @@ const Reactor = (props: { _id: number, reactorName: string, navigate: () => void
                 <Grid className={` reactor-image ${style === style ? style : null}`}>
                     <img className={` ${reactorPowerStatus ? 'reactor-on' : 'reactor-off'}`} src={image[0]} alt={reactorName} />
                 </Grid>
-                <Grid container className='reactor-gauges' direction='row' justifyItems={'center'} justifyContent={'space-between'}>
-                    <Grid item className='gauge-1'>
+                <Grid container className='reactor-gauges' direction='row' justifyItems='center' justifyContent='space-evenly'>
+                    <Grid item sx={{ width: 45 }} className='gauge-1'>
                         <Typography variant='subtitle2'>
                             22
                         </Typography>
                     </Grid>
-                    <Grid item className='gauge-2'>
+                    <Grid item sx={{ width: 45 }} className='gauge-2'>
                         <Typography variant='subtitle2'>
                             33
                         </Typography>
@@ -36,4 +36,4 @@ const Reactor = (props: { _id: number, reactorName: string, navigate: () => void
     )
 }
 
-export default Reactor
+export default memo(Reactor)

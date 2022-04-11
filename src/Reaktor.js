@@ -2,9 +2,9 @@
 
 const reaktors = [
     {
-    _id: 1,
+      _id: 1,
       name: 'R001',
-      image:[ "/images/Reactors/r001.png","/images/Reactors/r001D.png"],
+      image:[ "/images/Reactors/r001.png","/images/Reactors/reaktor1.svg"],
     },
     {
       style:'reactor-2',
@@ -58,7 +58,7 @@ const reaktors = [
       style:'reactor-11',
       _id: 11,
       name: 'R0011',
-      image:[ "/images/Reactors/r001.png","/images/Reactors/r001D.png"],
+      image:[ "/images/Reactors/r003.png","/images/Reactors/r003D.png"],
     },
     {
       _id: 12,
@@ -81,6 +81,7 @@ const reaktors = [
       image:[ "/images/Reactors/r004.png","/images/Reactors/r004D.png"],
     },
     {
+      style:'reactor-16',
       _id: 16,
       name: 'R0016',
       image:[ "/images/Reactors/r004.png","/images/Reactors/r004D.png"],
@@ -94,6 +95,22 @@ const reaktors = [
       _id: 18,
       name: 'R0018',
       image:[ "/images/Reactors/r004.png","/images/Reactors/r004D.png"],
+    },
+    {
+      _id: 19,
+      name: 'R0019',
+      image:[ "/images/Reactors/parak1.png","/images/Reactors/r004D.png"],
+    },
+    {
+      _id: 20,
+      name: 'R0020',
+      image:[ "/images/Reactors/parak1.png","/images/Reactors/parak1.png"],
+    }
+    ,
+    {
+      _id: 21,
+      name: 'R0021',
+      image:[ "/images/Reactors/parak2.png","/images/Reactors/parak2.png"],
     }
 
   ]

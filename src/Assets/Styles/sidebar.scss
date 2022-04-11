@@ -2,8 +2,8 @@
 
 .logo{
     margin-bottom: 15px;
-    width: 10px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 .sidebar{
     background-color: $primaryColor;
@@ -19,7 +19,4 @@
     border-radius:25px;
     background-color: #969897;
     transition: 1s ease-out;
-}
-.drawer{
-    border: 0.5px solid $mainColor;
 }

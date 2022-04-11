@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.scss';
 import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/Sidebar';
-import LayoutReactor from './Layout/Layout-reactor/LayoutReactor';
-import LayoutSetting from './Layout/Layout-setting/LayoutSetting';
+import LayoutReactor from './Layout/reactor-layout/LayoutReactor';
+import LayoutSetting from './Layout/setting-layout/LayoutSetting';
 //install Fonts
 import Yekan from './Assets/Styles/Yekan.woff'
 import { ThemeProvider } from '@emotion/react';
+import SingleReactorLayout from './Layout/singleReactor-layout/SingleReactorLayout';
 
 const theme = createTheme({
   typography: {
@@ -41,11 +42,12 @@ function App() {
               <Sidebar />
             </Grid>
             <Grid item lg md>
-              <Grid item lg md>
+              {/* <Grid item lg md>
                 <Header />
-              </Grid>
+              </Grid> */}
               <Routes>
                 <Route path='/' element={<LayoutReactor />} />
+                <Route path='/reactor/:id' element={<SingleReactorLayout />} />
                 <Route path='/setting' element={<LayoutSetting />} />
               </Routes>
             </Grid>

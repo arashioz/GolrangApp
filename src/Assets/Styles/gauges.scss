@@ -1,0 +1,19 @@
+.gauges-container{
+    height: 21vh;
+    width: 100%;
+    padding: 5px;
+    border-radius: 9px;
+    background: linear-gradient(145deg, #151515, #1F1F1F);
+    box-shadow:  5px 5px 7px #0c0c0c,
+                 -2px -2px 7px #3d3d3d;
+}
+
+.gaugeGraph-container{
+    height: 21vh;
+    width: 100%;
+    padding: 8px;
+    border-radius: 9px;
+    background: linear-gradient(145deg, #151515, #1F1F1F);
+    box-shadow:  5px 5px 7px #0c0c0c,
+                 -2px -2px 7px #3d3d3d;
+}

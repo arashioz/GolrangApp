@@ -1,8 +1,13 @@
 $mainColor: #000000;
-$primaryColor : #121212;
+$primaryColor : #151515;
 
-// .rightMenu{
-//     background-color: $mainColor;
-//     height: 100vh;
 
-// }
+.layout-container{
+    height: 100vh;
+    background-color: $primaryColor;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+.MuiAlertTitle-root{
+    border-radius: 245px;
+}

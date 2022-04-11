@@ -4,13 +4,27 @@
 
 .header-container{
     background-color: $primaryColor;
-    height:55px ;
-    margin-left: 62px;
+    height:48px ;
+    margin-left: 4px;
 }
 .header-container .logo{
-    padding: 6px;
+    padding: 0px;
     margin-right: 35px;
+    margin-left: 15px;
     // margin-left: 35px;
     width: 55px;
     height: 75%;
+}
+.header-container .company{
+    margin-left: 20px;
+}
+
+.MuiMenu-list{
+    background-color: $primaryColor;
+    width: 100%;
+    border-radius: 1px;
+}
+.MuiMenu-list * {
+    color: white;
+    border-radius: 12px;
 }
