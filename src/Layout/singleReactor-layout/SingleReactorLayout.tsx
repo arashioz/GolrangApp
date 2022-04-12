@@ -15,11 +15,12 @@ interface IFstate {
     name: string;
     image: string
 }
-const socket = io('wss://80.210.22.153:34111/coolingTemperature').connect()
-// socket.emit('coolingTemperature',{
-//     reactorName:"REAKTOR_1",
-//     startDateBeforeMS:30000
-// })
+const socket = io('http://80.210.22.153:34111/').connect()
+
+socket.emit('coolingTemperature', {
+    reactorName: "REAKTOR_1",
+    startDateBeforeMS: 30000
+})
 
 console.log(socket.connected)
 const SingleReactorLayout = () => {
@@ -88,7 +89,18 @@ const SingleReactorLayout = () => {
                             <GaugeAndGraph />
                             <GaugeAndGraph />
                         </Stack>
-
+                        <Stack direction="row" spacing={2}>
+                            <Gauge gaugeData={21} gaugeName={'sa'} />
+                            <Gauge gaugeData={25} gaugeName={'sa'} />
+                            <Gauge gaugeData={51} gaugeName={'sa'} />
+                            <Gauge gaugeData={41} gaugeName={'sa'} />
+                            <Gauge gaugeData={91} gaugeName={'sa'} />
+                            <Gauge gaugeData={21} gaugeName={'sa'} />
+                        </Stack>
+                        <Stack direction="row" spacing={2}>
+                            <GaugeAndGraph />
+                            <GaugeAndGraph />
+                        </Stack>
                     </Stack>
                 </Grid>
             </Grid>

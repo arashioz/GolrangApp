@@ -1,6 +1,7 @@
 import { Grid } from '@mui/material'
 import '../../Assets/Styles/sideReactor.scss'
 import React from 'react'
+//@ts-ignore
 
 interface IFsideReactor {
     image: string | undefined;
@@ -11,29 +12,38 @@ const SideReactor = (props: IFsideReactor) => {
     return (
         <Grid container direction='column'>
             <Grid item>
-                <svg width={300} height={80}>
-                    <line x1={170} x2={190} y1={80} y2={60} stroke='white' />
-                    <line x1={190} x2={240} y1={60} y2={60} stroke='white' />
-                    <rect width={50} height={30} y={45} x={250} stroke='#23ffbd7e' rx={8} strokeWidth={2.5} fill='transparent' />
-                    <text fill='white' x={260} y={65}>
-                        125
-                    </text>
-                </svg>
                 <Grid item className="reactor-image">
-                    <img alt='reactorImage' width={110} src={image} />
-                    <Grid item>
-                        s
-                    </Grid>
+                    <svg width={500} height={650} fill="none">
+                        <text fill='white' fontSize='12px' x={325} y={40}>
+                            +99.999
+                        </text>
+                        <image width={460} height={580} href={image} />
+                        <text fill='white' fontSize='12px' x={354} y={208}>
+                            +99.800
+                        </text>
+                        <text fill='white' fontSize='12px' x={354} y={273}>
+                            +99.908
+                        </text>
+                        <text fill='white' fontSize='12px' x={366} y={415}>
+                            +99.800
+                        </text>
+                        <text fill='white' fontSize='12px' x={367} y={460}>
+                            -99.800
+                        </text>
+                        <text fill='white' fontSize='12px' x={55} y={460}>
+                            -99.800
+                        </text>
+                        <text fill='white' fontSize='12px' x={105} y={410}>
+                           Feshar
+                        </text>
+                        <text fill='white' fontSize='12px' x={45} y={414}>
+                            -99.800
+                        </text>
+                        <text fill='white' fontSize='12px' x={55} y={460}>
+                            -99.800
+                        </text>
+                    </svg>
                 </Grid>
-                <svg width={300} height={80}>
-                    <line x1={170} x2={190} y1={80} y2={60} stroke='white' />
-                </svg>
-            </Grid>
-            <svg>
-
-            </svg>
-            <Grid item>
-                s
             </Grid>
         </Grid >
     )

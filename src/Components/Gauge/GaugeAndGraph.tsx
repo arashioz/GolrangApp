@@ -75,7 +75,7 @@ const GaugeAndGraph = () => {
         series: [
             {
                 name: 'series1',
-                data: [40, 62, 26, 23, 71, 96, 56]
+                data: [40, 62, 26, 23, 71, 96, 56 ]
             },
             {
                 name: 'series2',
