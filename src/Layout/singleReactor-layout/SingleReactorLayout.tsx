@@ -8,21 +8,17 @@ import AlarmBox from '../../Components/AlaramBox/AlarmBox'
 import SideReactor from "../../Components/SideReactor/SideReactor"
 import Gauge from "../../Components/Gauge/Gauge"
 import GaugeAndGraph from '../../Components/Gauge/GaugeAndGraph'
-import { io } from 'socket.io-client'
+import { io, Manager } from 'socket.io-client'
+import { Socket } from "engine.io-client"
 
 interface IFstate {
     _id: number;
     name: string;
     image: string
 }
-const socket = io('http://80.210.22.153:34111/').connect()
 
-socket.emit('coolingTemperature', {
-    reactorName: "REAKTOR_1",
-    startDateBeforeMS: 30000
-})
 
-console.log(socket.connected)
+
 const SingleReactorLayout = () => {
 
     const [reactorDetail, setReactorDetail] = useState<IFstate | undefined>()
@@ -30,7 +26,41 @@ const SingleReactorLayout = () => {
     const { id } = useParams()
 
 
+
+
+
+
+
+
+    const socket = new Socket('ws://80.210.22.153:34111/loadCell')
+    // socket.emit("loadCell", { "reactorName": "REACTOR_1", "startDateBeforeMS": 3000 })
+    
+    console.log(socket)
+    socket.on('open', () => {
+        socket.on('message', (data) => {});
+        socket.on('close', () => {});
+      });
+
+
+
+
+
+    // const socket = io('ws://80.210.22.153:34111', {
+    //     autoConnect: false,
+    //     transports: ['websocket']
+    //     , path: '/loadCell'
+    // }).connect()
+
+
+    // socket.on('loadCell', (d: any) => {
+    //     console.log(d)
+    // })
+
+
+
+    // { "reactorName": "REACTOR_1", "startDateBeforeMS": 3000 }
     useEffect(() => {
+
         reaktors.map((i: any) => {
             if (i._id === Number(id)) {
                 return (
